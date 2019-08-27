@@ -16,8 +16,8 @@ export class CartService {
     return this.items;
   }
 
-  removeItem(){
-   this.items.pop();
+  removeItem(itemId){
+   this.items.splice(itemId,1);
    return this.items;
  }
 
