@@ -5,5 +5,5 @@
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
-  <button (click)="removeItem()">Clear</button>
+ <button class="fancy-button material-icons" (click)="clearCart()">remove_shopping_cart</button>
 </div>
