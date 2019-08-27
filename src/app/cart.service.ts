@@ -16,6 +16,11 @@ export class CartService {
     return this.items;
   }
 
+  removeItem(){
+   this.items.pop();
+   return this.items;
+ }
+
   clearCart() {
     this.items = [];
     return this.items;
